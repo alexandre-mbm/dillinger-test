@@ -21,17 +21,15 @@ A mais simples e fácil possível, de tela única. Inclusive o usuário sendo ca
 Detalhamento:
 
 1. Duas colunas, sendo uma para o idioma de referência e a outra para o idioma sendo traduzido;
-1. **Imagem desatualizada:** haveria ações "Export" e/ou "Sync (REST)" para cada aba;
 1. Cada aba de uma coluna corresponde a um idioma de trabalho;
 1. Cada aba é identificada por uma bandeira invés de um nome;
-1. ~~Setençãs podem ser de dois tipos: "título" ou "item"~~ → **Não, a imagem está desatualizada.** O código Markdown se encarregará de fazer a diferenciação por renderização. O menu de contexto, que aparece para o clique de botão direito que é dado fora da área de uma setença individual mas dentro da área da aba, exibirá apenas um item de menu: `Criar setença`;
-- O clique de botão esquerdo numa setença torna exposto seu código Markdown para edição;
-- Cada sentença estaria com seu Markdown renderizado por lib Javascript;
-- Cada sentença seria criada, regravada, marcada ou apagada via [publish–subscribe](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern)
-- _Warnings_ de validação apareceriam em [mensagens tipo os _toasts_ do Android](http://www.devmedia.com.br/exibindo-mensagens-no-android-com-a-classe-toast/26668)
-- O _checkbox_ talvez deva ser substituído por item de menu no menu de contexto para o clique de botão direito em cima da setença. O objetivo é marcar traduções revisadas ou validadas. No caso de se usar o menu, a sinalização de marcação seria por alteração da cor da caixa da setença;
-- O estilo dessas listas de setenças imitira o estilo do [Wunderlist](https://www.wunderlist.com/), inclusive fazendo uso de [_drag-and-drop_](https://pt.wikipedia.org/wiki/Drag-and-drop) para ordenação delas (cf. [Dragula](http://hackpedia.com.br/instale-um-sistema-simples-de-drag-and-drop-na-sua-aplicacao-com-o-dragula/) ou [HTML5](http://www.html5rocks.com/pt/tutorials/dnd/basics/))
-- O menu de contexto para o clique de botão direito em cima da setença teria um item menu com contador e acesso para um _diff_ de versões da setença (em _pop-up_), com possibilidade de reversão. **Cuidado! A respeito disso a imagem também está desatualizada.**
+1. Cada aba teria uma "Export" e/ou "Sync (REST)";
+1. O clique de botão esquerdo numa setença expõe seu código Markdown para edição;
+1. Cada sentença Markdown seria renderizada em HTML por _lib_ Javascript;
+1. Cada sentença seria criada, regravada, marcada ou apagada via [publish–subscribe](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern)
+1. _Warnings_ e erros de validação apareceriam em [mensagens tipo os _toasts_ do Android](http://www.devmedia.com.br/exibindo-mensagens-no-android-com-a-classe-toast/26668)
+1. Cada setença pode ser marcada como revisada ou validada;
+1. O estilo dessas listas de setenças imitira o estilo do [Wunderlist](https://www.wunderlist.com/), inclusive fazendo uso de [_drag-and-drop_](https://pt.wikipedia.org/wiki/Drag-and-drop) para ordenação delas (cf. [Dragula](http://hackpedia.com.br/instale-um-sistema-simples-de-drag-and-drop-na-sua-aplicacao-com-o-dragula/) ou [HTML5](http://www.html5rocks.com/pt/tutorials/dnd/basics/))
 
 # Web minimalista, um estilo diferente
 
@@ -65,32 +63,7 @@ Exemplo de arquivo de configuração:
 }
 ```
 
-Exemplo de arquivo de traduções (primeira ideia):
-```js
-{
-	{
-    	type: "title", /* or "item" */
-        versions:
-        {
-        	en:
-            {
-            	date: "2015-06-20 18:30:01",
-                author: "manfred",
-                text: "Translation text here, in Markdown"
-            }
-        	pt:
-            {
-            	date: "2015-06-20 19:20:11",
-                author: "alexandre",
-                text: "Translation text here, in Markdown"
-            }
-        }
-    }
-}
-```
-
-Na verdade, sem diferenciação de tipo de setença, teremos:
-
+Exemplo de arquivo de traduções:
 ```js
 {
     {
