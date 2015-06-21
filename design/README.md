@@ -31,11 +31,15 @@ Detalhamento:
 1. Cada setença pode ser marcada como revisada ou validada;
 1. O estilo dessas listas de setenças imitira o estilo do [Wunderlist](https://www.wunderlist.com/), inclusive fazendo uso de [_drag-and-drop_](https://pt.wikipedia.org/wiki/Drag-and-drop) para ordenação delas (cf. [Dragula](http://hackpedia.com.br/instale-um-sistema-simples-de-drag-and-drop-na-sua-aplicacao-com-o-dragula/) ou [HTML5](http://www.html5rocks.com/pt/tutorials/dnd/basics/))
 
+The dialog for changing version:
+
+![changing version](changing-version.png)
+
 # Web minimalista, um estilo diferente
 
 Para o sistema ser extremamente simples e realmente muito barato, de tela única, não pode se responsabilizar por fluxos de configuração e gerência de dados. A figura de um administrador lida com dois arquivos JSON: um de configurações e outro de dados (que é renovado a cada semana).
 
-![usecases](admin-actions.png)
+![admin actions](admin-actions.png)
 
 Esses **não são** casos de uso do sistema. Pelo contrário, são ações que ele requer.
 
