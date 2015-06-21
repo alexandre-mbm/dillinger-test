@@ -35,7 +35,7 @@ Detalhamento:
 
 Para o sistema ser extremamente simples e realmente muito barato, de tela única, não pode se responsabilizar por fluxos de configuração e gerência de dados. A figura de um administrador lida com dois arquivos JSON: um de configurações e outro de dados (que é renovado a cada semana).
 
-![usecases](usecases.png)
+![usecases](admin-actions.png)
 
 Esses **não são** casos de uso do sistema. Pelo contrário, são ações que ele requer.
 
