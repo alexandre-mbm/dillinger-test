@@ -37,6 +37,8 @@ Para o sistema ser extremamente simples e realmente muito barato, de tela única
 
 ![usecases](usecases.png)
 
+Esses **não são** casos de uso do sistema. Pelo contrário, são ações que ele requer.
+
 Na verdade, o JSON de dados somente é útil como backup e ao final do fluxo, quando é exportado/transformado em um documento Markdown para cada idioma.
 
 # Modelo de dados
