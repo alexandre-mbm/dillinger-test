@@ -23,9 +23,9 @@ Detalhamento:
 1. Duas colunas, sendo uma para o idioma de referência e a outra para o idioma sendo traduzido;
 1. Cada aba de uma coluna corresponde a um idioma de trabalho;
 1. Cada aba é identificada por uma bandeira invés de um nome;
-1. Cada aba teria uma "Export" e/ou "Sync (REST)";
+1. Cada aba teria uma ação "Export" e/ou "Sync (REST)";
 1. O clique de botão esquerdo numa setença expõe seu código Markdown para edição;
-1. Cada sentença Markdown seria renderizada em HTML por _lib_ Javascript;
+1. Cada sentença Markdown seria renderizada em HTML mediante uma biblioteca Javascript;
 1. Cada sentença seria criada, regravada, marcada ou apagada via [publish–subscribe](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern)
 1. _Warnings_ e erros de validação apareceriam em [mensagens tipo os _toasts_ do Android](http://www.devmedia.com.br/exibindo-mensagens-no-android-com-a-classe-toast/26668)
 1. Cada setença pode ser marcada como revisada ou validada;
