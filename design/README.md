@@ -48,6 +48,8 @@ Exemplo de arquivo de configuração:
     languages:
     {
     	en: "English",
+        es: "Spanish"
+        it: "Italian",
         pt: "Portuguese"
     },
     users:
